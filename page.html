@@ -1,0 +1,173 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Wallpaper website
+    </title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="CSS/maincss.css">
+    <link rel="stylesheet" href="CSS/page.css">
+</head>
+
+<body  >
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="png/logo.png">
+        </a>    
+    </div>
+
+    
+
+    <!-- Searching -->
+   <div class="Searchcontainer">
+        <form action="/search.html" class="searchf">
+            <input type="text" name="query" placeholder="search images..." >
+            <button type="submit"><img src="png/searchlogo.png"></button>
+        </form>
+    </div>
+    
+    <br>
+
+    <!-- Tags here -->
+    <div class="navtags">
+        <a href="search.html?query=cars">
+            <button>Cars</button>
+        </a>
+        <a href="search.html?query=trees">
+            <button>Trees</button>
+        </a>
+        <a href="search.html?query=mountains">
+            <button>Mountains</button>
+        </a>
+        <a href="search.html?query=landscape" class="innertag">
+            <button>Landscape</button>
+        </a>
+        <a href="search.html?query=cute" class="outertag">
+            <button>Cute</button>
+        </a>
+   </div>
+    
+        
+
+    <hr width="100%" size="0">
+    
+
+
+    <!-- Main image content -->
+    <div class="row">
+        <div class="column" id="c0">
+            <!-- Images -->  
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+
+            
+        </div>
+        <div class="column" id="c1">
+            <!-- Images -->
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            
+        </div>
+        <div class="column" id="c2">    
+            <!-- Images -->
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+          
+        </div>
+    </div>
+
+
+
+    <!-- Paging -->
+    <div class="pagenoshow">
+        <div id="noshow">
+            
+        </div>
+    </div>
+    <form class="pagenumber" action="page.html" id="page">
+        <br>
+        <input type="text" placeholder="Go to page" name="goto" class="inputid">
+        <br>
+        <br>
+    </form>
+
+
+    <!-- Pagebuttons -->
+    <div class="pagebuttons">
+        <a>
+            <button id="prev" class="previousb">Prev</button>
+        </a>
+        <a href="index.html">
+            <button id="pg1" class="pgbutton">1</button>
+        </a>
+        <a>
+            <button id="pg2" class="pgbutton highlight">2</button>
+        </a>
+        <a href="page.html?goto=3">
+            <button id="pg3" class="pgbutton">3</button>
+        </a>
+        ....
+        <a href="page.html?goto=5">
+            <button  id="pg4" class="pgbutton">5</button>
+        </a>
+
+        <a href="page.html?goto=2">
+            <button id="next" class="nextb">Next</button>
+        </a>
+    </div>
+   
+
+
+
+    <!-- Adding script -->
+    <script src="JS/page.js"></script>
+    
+
+</body>
+</html>

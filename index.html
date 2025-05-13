@@ -1,0 +1,234 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Wallipers Home
+    </title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="CSS/maincss.css">
+
+</head>
+<body  >
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="png/logo.png">
+    </div>
+    
+
+    
+
+    <!-- Searching -->
+    <div class="Searchcontainer">
+        <form action="/search.html" class="searchf">
+            <input type="text" name="query" placeholder="search images..." >
+            <button type="submit"><img src="png/searchlogo.png"></button>
+        </form>
+    </div>
+    
+
+    <!-- Navigation tags -->
+    <div class="navtags">
+        <a href="search.html?query=plants">
+            <button>Plants</button>
+        </a>
+        <a href="search.html?query=mountains">
+            <button>Mountains</button>
+        </a>
+        <a href="search.html?query=river">
+            <button>River</button>
+        </a>
+        <a href="search.html?query=Flower" class="innertag">
+            <button>Flower</button>
+        </a>
+        <a href="search.html?query=snow" class="outertag">
+            <button>Snow</button>
+        </a>
+   </div>
+
+
+   <!-- Sliders -->
+   <div class="slider">
+        <a href="download.html?photo=smoke and mountains">
+            <img src="images/Smoke and mountains.jpg" class="slide">
+        </a>
+        <a href="download.html?photo=orange sunrise">
+            <img src="images/Orange sunrise.jpg" class="slide">
+        </a>
+        <a href="download.html?photo=clouds and mountains">
+            <img src="images/Clouds and mountains.jpg" class="slide">
+        </a>
+        <a href="download.html?photo=mountains and clouds">
+            <img src="images/Mountains and clouds.jpg" class="slide">
+        </a>
+        <div class="left">
+            <button id="sliderleft"><img src="png/leftslider.png"></button>
+        </div>
+        <div class="right">
+            <button id="sliderright"><img src="png/leftslider.png"></button>
+        </div>
+   </div>
+   
+    
+        
+    <!-- Lines -->
+    <hr width="100%" size="0">
+    
+
+    <!-- Main image content -->
+    <div class="row">
+        <div class="column" id="c0">
+            <!-- Images -->  
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+
+            
+        </div>
+        <div class="column" id="c1">
+            <!-- Images -->
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            
+        </div>
+        <div class="column" id="c2">    
+            <!-- Images -->
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+            <a href="">
+                <div class="content">
+                    
+                </div>
+            </a>
+          
+        </div>
+    </div>
+
+
+    <!-- Paging -->
+    <div class="pagenoshow">
+        Page 1 of 5
+    </div>
+    <form class="pagenumber" action="page.html" id="page">
+        <br>
+        <input type="text" placeholder="Go to page" name="goto" class="inputid">
+        <br>
+        <br>
+    </form>
+
+    <!-- Page buttons -->
+    <div class="pagebuttons">
+        <button type="submit" id="prev" class="previousb highlight" value="1">Prev</button>
+        <button id="pg1" class="pgbutton highlight">1</button>
+        <a href="page.html?goto=2">
+            <button type="submit" id="pg2" class="pgbutton">2</button>
+        </a>
+        <a href="page.html?goto=3">
+            <button type="submit" id="pg3" class="pgbutton">3</button>
+        </a>
+        ....
+        <a href="page.html?goto=5">
+            <button type="submit" id="pg4" class="pgbutton">5</button>
+        </a>
+        <a href="page.html?goto=2">
+            <button type="submit" id="next" class="nextb">Next</button>
+        </a>    
+    </div>
+
+
+
+
+    <!-- Adding credentials -->
+    <div class="about" >
+        <hr width="100%" size="2" color="white">
+
+        This website is created as a project by Ravinder Singh.
+    </div>
+
+
+
+    <!-- Adding script -->
+    <script src="JS/mainjs.js"></script>
+    
+
+</body>
+</html>
