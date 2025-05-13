@@ -1,0 +1,502 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+/* Logo */
+.logo{
+    background-position: left;
+    box-shadow: 0 0 4px;
+    
+}
+.logo img{
+    margin-left: 5px;
+    margin-bottom:1px;
+    margin-top: 2px;
+    width: 250px;
+    height: 50px;
+}
+
+
+
+
+
+/* About line */
+hr {
+    margin-top: 20px;
+    box-shadow:0px 0px 4px;
+}
+
+
+
+
+/* Searching area */
+.Searchcontainer{ 
+    background-position: center;
+    margin-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    /* width:  */
+}
+.searchf{
+    /* width: 60%; */
+    background: rgb(0, 0, 0,0.2);
+    display: flex;
+    border-radius: 60px;
+    padding: 10px 20px;
+    box-shadow: 0px 1px 5px;
+}
+.searchf input{
+    border:0;
+    outline:none;
+    background:transparent;
+    flex:1;
+    font-size: 22px;
+    color: black;
+}
+::placeholder{
+    color: rgb(70, 70, 70);
+}
+.searchf button img{
+    width: 30px;
+    color: black;
+}
+.searchf button{
+    border-radius: 50%;
+    border:0;
+    width:35px;
+    height: 35px;
+    cursor: pointer;
+    background:transparent;
+    
+}
+.searchf button:hover{
+    transform: scale(1.1);
+    transition: transform 100ms ease-out;
+}
+
+
+
+
+/* Tags */
+.navtags {
+    margin-top:10px;
+    max-height:40px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.navtags a{
+    text-decoration: none;
+}
+
+.navtags button{
+ 
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    width: 140px;
+    height: 40px;
+    font-weight: 500;
+    font-family: 'Segoe UI';
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: black 0px 1px 3px;
+    background-color:#727690;
+    border: none;
+    color: white;
+ 
+    
+}
+
+
+
+/* Slider showing */
+.slider{
+    width: 70%;
+    height: 40vw;
+    box-shadow: 3px 3px 3px gray;
+    margin:auto;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slide{
+    transition:0.5s ease-in-out;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+.slider .left{
+    position:absolute;
+    top:45%;
+    left:1%;
+}
+.slider .left button{
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+    background-color: white;
+
+    border: none
+    
+}
+.left button img{
+    margin-right: 5px;
+    width: 70%;
+    height: 70%;
+}
+
+.slider .right{
+    position:absolute;
+    top:45%;
+    right:1%;
+}
+.slider .right button{
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+    background-color: white;
+
+    border: none
+    
+}
+.right button img{
+    transform:rotate(180deg);
+    margin-left: 5px;
+    width: 70%;
+    height: 70%;
+}
+
+
+
+
+
+
+
+/* Main content area */
+.row{
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.column{
+    width: 33.33%;
+}
+
+.column a{
+    color: black;
+    
+}
+
+.column .content{
+    position: relative;
+    width:95%;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left:auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    
+}
+.load1{
+    background-image: url("loading/load1.jpg");
+    min-height: 100px;
+}
+.load2{
+    background-image: url("loading/load2.jpg");
+    min-height: 100px;
+}
+.load3{
+    background-image: url("loading/load3.jpg");
+    min-height: 100px;
+}
+.load4{
+    background-image: url("loading/load4.jpg");
+    min-height: 100px;
+}
+.load5{
+    background-image: url("loading/load5.jpg");
+    min-height: 100px;
+}
+
+.column .content img{
+    /* margin-top: ; */
+    display: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+.blur {
+    opacity: 0;
+}
+
+.column .content:hover{
+    button{
+        opacity: 1;
+    }
+
+}
+
+.content button{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom:7px;
+    right: 10px;
+    border-color: white;
+    border:none;
+    border-radius: 50%  ;
+    background-color:white
+    
+}
+
+.content button img{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow:0 0 0;
+    height: 85%;
+    width: 85%
+}
+.content button:hover{
+   
+    transform: scale(1.05);
+    transition: transform 100ms ease-out;
+    img{
+        transform: scale(1.15);
+        transition: transform 100ms ease-out;
+      
+    }
+}
+
+
+
+/* Paging */
+.pagenoshow{
+    margin-top:5px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    
+}
+.pagenumber{
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.pagenumber input{
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid black;
+    font-size: 18px;
+}
+::placeholder{
+    
+    color: rgb(126, 126, 126);
+}
+.pagebuttons{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pagebuttons .pgbutton{
+   
+    height: 35px;
+    width: 35px;
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.pagebuttons .nextb{
+    /* margin-top: 5px; */
+    margin-left: 10px;
+    height: 35px;
+    width: 60px;
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.pagebuttons a{
+    text-decoration: none;
+}
+.pagebuttons .previousb{
+    /* margin-top: 5px; */
+    margin-right: 10px;
+    height: 35px;
+    width: 60px;
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;   
+}
+.highlight{
+    border:none;
+    
+}
+
+
+/* Credentials area */
+.about{
+    
+    width: 100%;
+    height: 150px;
+    
+    margin-top:20px;
+
+    text-align: center;
+    background-color: #727690;
+    font-size: 22px;
+    font-family:'Segoe UI';
+    color: rgb(240, 240, 240);
+
+    
+    
+}
+.about hr{
+    box-shadow: 0px -2px 5px black;
+
+    top:-15%
+}
+
+.about img{
+    height: 100px;
+    width: 100px;
+}
+.about .info{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.about .info .left{
+    
+    width: 45%;
+    margin-right: auto;
+    font-weight: 800;
+    font-size: 35px;
+
+   
+    
+}
+.about .info .right{
+    margin-left: auto;
+    
+    width: 45%;
+    font-weight: 800;
+    
+    font-size: 35px;
+    
+}
+
+
+
+
+/* Media queries */
+@media screen and (max-width:800px)
+{
+    .slider{
+        width: 90%;
+        height: 50vw;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .column{
+        width: 100%;
+    }
+    logo{
+        font-size: 0;
+    }
+
+   
+    .slider .left button{
+        width: 40px;
+        height: 40px;
+    }
+    .slider .right button{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    nav search{
+        margin-bottom:2px;
+        
+    }
+    .slidecontainer img{
+        width: 95%;
+        height: 300px;
+    }
+    
+    .about{
+        bottom:-5%;
+    }
+    .about .info .left{
+        font-size: 25px;
+    }
+    .about .info .right{
+        font-size: 25px;
+    }
+
+    
+
+}
+@media screen and (max-width:780px){
+    
+    .navtags .outertag{
+        visibility: collapse;
+    }
+    .navtags button{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+    .navtags .innertag{
+        visibility: collapse;
+    }
+
+    .slider .left button{
+        width: 30px;
+        height: 30px;
+    }
+    .slider .right button{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:440px){
+    
+    .navtags button{
+        width:105px;
+    }
+}

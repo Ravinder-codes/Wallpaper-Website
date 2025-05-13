@@ -1,0 +1,27 @@
+/* Not found error */
+.notfound{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family:'Segoe UI';
+    font-weight: 600;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gohome{
+    margin-top:10px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    color:white;
+    background-color: #727690;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family:'Segoe UI';
+    height: 40px;
+}

@@ -1,0 +1,142 @@
+/* Download image content */
+main{
+    width: 99%;
+    margin: auto;
+    display: flex;
+}
+/* Image title */
+.imgtext{
+    margin-bottom: 5px;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+/* Image container */
+.photo{
+    width: 65%;
+    max-height:95vh;
+    object-fit: cover;
+}
+/* The image itself */
+.photo img{
+    display: block;
+    margin-left: auto;
+    box-shadow: 2px 2px 2px;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Image details */
+.text{
+    
+    width: 35%;
+    padding: 10px;
+}
+/* Entries container */
+.text .infomain{
+    display: flex;
+    flex-direction: column;
+
+}
+/* Type of entries */
+.infomain .info{
+    font-size: 25px;
+    font-family:'Segoe UI' ;
+    font-weight: 600;
+    
+}
+/* Entries */
+.infomain .infoabout{
+    text-wrap: wrap;
+    font-size: 23px;
+    font-family:'Segoe UI' ;
+    font-style: italic;
+}
+/* Download button */
+.text  button{
+    margin-top: 10px;
+    display: block;
+    margin-right: auto;
+    background-color: #81b29a;
+    color: rgb(242, 242, 242);
+    font-size: 35px;
+    font-weight: 600;
+    width:100%;
+    height: 80px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    
+}
+/* Button anchor tag */
+a{
+    text-decoration: none;
+}
+
+
+
+/* Line */
+hr{
+    box-shadow: 0px -1px 3px;
+    margin-top: 10px;
+}
+
+
+/* Related text */
+.Related{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-family:'Segoe UI';
+    font-style: italic;
+}
+
+
+
+/* Media queries */
+@media screen and (max-width:800px){
+    
+    .main{
+        flex-direction:column;
+        
+    }
+    .photo{
+        display: block;
+        width: 80%;
+        margin: auto;
+        /* height: 80vh; */
+     
+    }
+    .photo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 90vh;
+    }
+    .text{
+        display: block;
+        margin:auto;
+        margin-top:20px;
+        width: 98%;
+        padding:0;
+    }
+    
+    
+    .imgtext{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    
+    .photo{
+        display: block;
+        width: 90%;
+        margin: auto;     
+    }
+}
+
+
+
